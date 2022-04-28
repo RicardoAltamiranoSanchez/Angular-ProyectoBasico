@@ -1,0 +1,21 @@
+<h1>Listado de Heroes</h1>
+<ul>
+<!-- el *ngFor es una directiva angular que nos permite iterar sobre un arreglo -->
+<!-- index es para hacer refencia al indice lo hacemos por separado por asi es en angular seria como un foreach -->
+<li *ngFor="let h of heroes;let i = index; ">{{i}}-{{h}}</li>
+
+</ul>
+<!-- el *ngif es un if asi se pone en angular -->
+<!-- Pones el else despues y un nombre en donde mandaremos llamar por si es else  -->
+<div *ngIf="borrado !== ''; else noBorrado;" >
+<h1>Heroe Borrado</h1>
+<p></p>
+<span >{{borrado}}</span>
+</div>
+<!-- El ng-template es propio de angular y hacesmos referencia al else  y mandamos a llamar en como un id -->
+<ng-template #noBorrado>
+<h3>Aun no ha borrado nada</h3>
+</ng-template>
+
+
+<button (click)="EliminarHero()">Eliminar Heroe</button>
