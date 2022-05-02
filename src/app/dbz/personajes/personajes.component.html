@@ -1,0 +1,7 @@
+<h3>Personajes</h3>
+<!--                                                                                         con te | number de decimos que nos muestre el numero en forma decimal o numerica -->
+<ul>
+<!-- el personajes es del metedo de get para obtener todos los personajes -->
+  <li *ngFor="let p of personajes;let i= index;">{{i+1}}-Nombre:{{p.nombre}} Poder:{{p.poder | number}}</li>
+            
+</ul>

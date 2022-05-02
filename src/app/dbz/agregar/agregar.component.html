@@ -1,0 +1,25 @@
+<h3>Agregar nuevo Personaje</h3>
+<!-- ngSubmit es un metodo de  FormsModule para formulario simples -->
+<form (ngSubmit)="Agregar()">
+  <input
+    type="text"
+    name="nombre"
+    placeholder="Nombre"
+    [(ngModel)]="Personaje.nombre"
+  />
+  <!-- el value con [] es para cuando vamos a implementar algo a o dar un valor por eso se pone  value es el valor de la caja -->
+
+  <input
+    type="number"
+    name="poder"
+    placeholder="Poder"
+    [(ngModel)]="Personaje.poder"
+  />
+
+  <br />
+  <button type="submit" name="agregar">Agregar</button>
+</form>
+<!-- (input)="CambiarNombre($event)" el input es el metodo que vamos a ser de tipo input $event se indica asi por default y asi debe llevar es igual en javascript con el (e) -->
+<!-- [value]="Personaje.poder"el value con [] es para cuando vamos a implementar algo a o dar un valor por eso se pone  value es el valor de la caja  -->
+<!--[(ngModel)]="Personaje.poder" []es para establecer y el () es para que se ejecute el metodo -->
+<!-- ngModel es un metodo que usamor para hacer las dos cosas sin necesidad de hacerlo de la manera con los value[] o() pero igual debemos indicar el nombre=nombre ejemplo -->

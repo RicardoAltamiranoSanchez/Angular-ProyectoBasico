@@ -3,6 +3,7 @@
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 200;
     text-align: center;
+  
     
   }
   
@@ -12,6 +13,8 @@
     margin: 20px;
     color: #3e4144;
     -webkit-font-smoothing: antialiased;
+    background: rgb(174,238,188);
+    background: radial-gradient(circle, rgba(174,238,188,1) 0%, rgba(180,148,233,1) 100%);
   }
   
   

@@ -1,0 +1,19 @@
+<h1>Dragon ball Z</h1>
+
+<div class="row">
+    <div class="col">
+    <!-- //[Personajes] indicamos que es una variable o un arreglo pero lo vamos a mandar al otro componente ponemos[y el nombre ] -->
+      <app-personajes  ></app-personajes>
+      
+    </div>
+    <div class="col">
+         <!-- El onNuevoPersonaje es la funcion que hicimos con el EventEmitter para enviar el datos 
+        y la otra funcion de AgregarNuevoPersonaje es la clase padre de esta y el $event es el event
+        es el valor que enviamos -->
+        <app-agregar  [Personaje]="Personaje"
+     
+        
+        ></app-agregar>
+        <!-- (onNuevoPersonaje)="AgregarNuevoPersonaje($event)" -->
+ </div>
+</div>

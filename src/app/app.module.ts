@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 
 import { AppModuleHero} from './heroe/app.hero.module';
 import { ContadorModuloApp } from './contador/app.contador.module';
+import { DbzModule } from './dbz/dbz.module';
 //ejercicio
-
+//comandos para producion ng build --prod crear la carpeta dist
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContadorModuloApp } from './contador/app.contador.module';
   imports: [
     BrowserModule,
     AppModuleHero,
-    ContadorModuloApp
+    ContadorModuloApp,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
